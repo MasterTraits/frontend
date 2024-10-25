@@ -40,6 +40,8 @@ module.exports = {
       'texttime' : '#4C4C4C',
       "header" : "#33363F",
       "gold" : "#F4BE37",
+      "blue" : "#3F56FF",
+      "gray" : "#AFAFAF",
     },
     
   },

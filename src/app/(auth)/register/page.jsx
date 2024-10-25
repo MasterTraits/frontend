@@ -33,29 +33,29 @@ export default function page() {
         <div className="w-full px-2">
           <h2 className="text-center text-2xl font-bold my-5 mb-8">Let's Get you Started!</h2>
           <form>
-          <input className="mb-4 input input-bordered rounded-full bg-transparent w-full max-w-md" 
+          <input className="mb-4 input rounded-full bg-transparent w-full max-w-md" 
               type="text" 
               placeholder="First Name" 
               required
           />
-          <input className="mb-4 input input-bordered rounded-full bg-transparent w-full max-w-md" 
+          <input className="mb-4 input rounded-full bg-transparent w-full max-w-md" 
             type="text" 
             placeholder="Last Name" 
             required
           />
-          <input className="mb-4 input input-bordered rounded-full bg-transparent w-full max-w-md" 
+          <input className="mb-4 input rounded-full bg-transparent w-full max-w-md" 
             type="contact" 
             placeholder="Contact no." 
             required
           />
-          <input className="mb-4 input input-bordered rounded-full bg-transparent w-full max-w-md" 
+          <input className="mb-4 input rounded-full bg-transparent w-full max-w-md" 
             type="email" 
             placeholder="Email" 
             required
           />
             <br/>
             <div className="relative">
-              <input className="mb-4 input input-bordered rounded-full bg-transparent w-full" 
+              <input className="mb-4 input rounded-full bg-transparent w-full" 
                 type={showpwd.text}  
                 placeholder="Password"
                 required
@@ -65,7 +65,7 @@ export default function page() {
               : <FiEyeOff className="absolute top-3.5 right-4" onClick={togglePwd}/>}
             </div>
             <div className="relative">
-              <input className="mb-7 input input-bordered rounded-full bg-transparent w-full " 
+              <input className="mb-7 input rounded-full bg-transparent w-full " 
                 type={showpwd.text}  
                 placeholder="Repeat Password"
                 required
