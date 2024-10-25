@@ -37,8 +37,9 @@ module.exports = {
       "black" : '#000',
       "btnWhite" : '#D9D9D9',
       "green" : '#54C541',
-      'texttime' : '4C4C4C',
+      'texttime' : '#4C4C4C',
       "header" : "#33363F",
+      "gold" : "#F4BE37",
     },
     
   },

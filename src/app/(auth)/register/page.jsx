@@ -61,8 +61,8 @@ export default function page() {
                 required
               />
               {showpwd.seepwd ? 
-                <FiEye className="absolute top-4 right-4" onClick={togglePwd}/> 
-              : <FiEyeOff className="absolute top-4 right-4" onClick={togglePwd}/>}
+                <FiEye className="absolute top-3.5 right-4" onClick={togglePwd}/> 
+              : <FiEyeOff className="absolute top-3.5 right-4" onClick={togglePwd}/>}
             </div>
             <div className="relative">
               <input className="mb-7 input input-bordered rounded-full bg-transparent w-full " 
@@ -71,17 +71,17 @@ export default function page() {
                 required
               />
               {showpwd.seepwd ? 
-                <FiEye className="absolute top-4 right-4" onClick={togglePwd}/> 
-              : <FiEyeOff className="absolute top-4 right-4" onClick={togglePwd}/>}
+                <FiEye className="absolute top-3.5 right-4" onClick={togglePwd}/> 
+              : <FiEyeOff className="absolute top-3.5 right-4" onClick={togglePwd}/>}
             </div>
           </form>
         </div>
         <button className="btn w-full max-w-md mb-7 text-lg rounded-full mx-5">Sign Up</button> 
-          <p className="mb-2 text-neutral-600">or sign up with:</p>
+          <p className="mb-2 text-header">or sign up with:</p>
           <div className="flex gap-3 justify-evenly ">
-            <img className="h-12 w-12 bg-card rounded-full p-2 z-20" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1200px-Google_%22G%22_logo.svg.png"/>
-            <img className="h-12 w-12 bg-card rounded-full p-2 z-20" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1200px-Facebook_Logo_%282019%29.png"/>
-            <img className="h-12 w-12 bg-card rounded-full p-2 z-20" src="https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-512.png"/>
+            <img className="h-12 w-12 bg-btnWhite rounded-full p-2 z-20" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1200px-Google_%22G%22_logo.svg.png"/>
+            <img className="h-12 w-12 bg-btnWhite rounded-full p-2 z-20" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1200px-Facebook_Logo_%282019%29.png"/>
+            <img className="h-12 w-12 bg-btnWhite rounded-full p-2 z-20" src="https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-512.png"/>
           </div>
       </div>
     </main>

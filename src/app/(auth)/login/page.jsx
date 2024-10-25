@@ -43,30 +43,30 @@ export default function Home() {
             />
             <br/>
             <div className="relative">
-              <input className="mb-7 input rounded-full bg-transparent w-full max-w-md" 
+              <input className="mb-7 input rounded-full bg-transparent w-full max-w-lg" 
                 type={showpwd.text}  
                 placeholder="Password"
                 required
               />
               {showpwd.seepwd ? 
-                <FiEye className="absolute top-4 right-4" onClick={togglePwd}/> 
-              : <FiEyeOff className="absolute top-4 right-4" onClick={togglePwd}/>}
+                <FiEye className="absolute top-3.5 right-4 text-header" onClick={togglePwd}/> 
+              : <FiEyeOff className="absolute top-3.5 right-4 text-header" onClick={togglePwd}/>}
             </div>
           </form>
           
-          <Link href="/auth/forgotpass" className="underline text-sm text-header">Forgot Password?</Link>
+          <Link href="/forgotpass" className="underline text-sm text-header">Forgot Password?</Link>
           <br/><br/>
           <div className="flex"> 
             <input type="checkbox" className="checkbox border-2 h-5 w-5" id="remember"/>
-            <label className="text-sm" htmlFor="remember">&nbsp; Remember Me</label>
+            <label className="text-sm text-header" htmlFor="remember">&nbsp; Remember Me</label>
           </div>
               
-          <p className="mt-10 mb-2 text-sm text-center text-neutral-600">No Account? <Link className="text-link" href="/register">Register here</Link></p>
-          <button className="btn w-full max-w-md mb-7 text-lg rounded-full">Sign In</button> 
+          <p className="mt-10 mb-2 text-sm text-center text-header">No Account? <Link className="text-link font-semibold" href="/register">Register here</Link></p>
+          <button className="btn w-full max-w-md mb-7 text-lg rounded-full hover:bg-gold transform transition-colors linear">Sign In</button> 
           <div className="flex justify-evenly">
-            <img className="h-12 w-12 bg-card rounded-full p-2 z-20" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1200px-Google_%22G%22_logo.svg.png"/>
-            <img className="h-12 w-12 bg-card rounded-full p-2 z-20" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1200px-Facebook_Logo_%282019%29.png"/>
-            <img className="h-12 w-12 bg-card rounded-full p-2 z-20" src="https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-512.png"/>
+            <img className="h-12 w-12 bg-btnWhite rounded-full p-2 z-20" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1200px-Google_%22G%22_logo.svg.png"/>
+            <img className="h-12 w-12 bg-btnWhite rounded-full p-2 z-20" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1200px-Facebook_Logo_%282019%29.png"/>
+            <img className="h-12 w-12 bg-btnWhite rounded-full p-2 z-20" src="https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-512.png"/>
           </div>
 
         </div>

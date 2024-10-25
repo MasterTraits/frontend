@@ -7,7 +7,7 @@
   --foreground: #171717;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: white) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
@@ -20,6 +20,11 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+::selection {
+  background: #F4BE37;
+  color: black;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
@@ -28,7 +33,7 @@ body {
 
 @layer components {
   .btn {
-    @apply bg-card text-white font-bold py-2 px-4 rounded;
+    @apply bg-card text-white font-bold py-2.5 px-4 rounded;
   }
 
   input {
