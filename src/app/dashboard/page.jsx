@@ -8,7 +8,11 @@ import { useState } from 'react'
 import Link from 'next/link'
 
 export default function page() {
-  const [showDashboard, setSetShowDashboard] = useState(false)
+  const [showDashboard, setSetShowDashboard] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  }
   
   return (
     <main className="relative bg-background p-5 h-screen overflow-hidden">
@@ -30,20 +34,28 @@ export default function page() {
         <div className="rounded-2xl h-20 w-full bg-white drop-shadow-[0_0_15px_rgb(0,0,0,0.15)]">
 
         </div>
-
       </section>
-      <footer className="flex items-center gap-2">
-        <div className="flex items-center bottom-10 bg-white rounded-3xl px-4 h-14 w-full drop-shadow-[0_0_20px_rgb(0,0,0,0.25)]">
-          <div className="flex gap-4 items-center">
-            <BsPaperclip className="text-4xl text-header p-1 rounded-full bg-btnWhite"/>
-            <input type="text" className="text-lg w-4/6" placeholder="Ask me anything!"/>
+
+      <article className="absolute h-screen w-screen">
+
+      </article>
+
+      <footer className="fixed bottom-10 w-full">
+        <form onSubmit={handleSubmit} className="flex items-center gap-2">
+          <div className="flex items-center bg-white rounded-3xl px-4 h-14 w-9/12 drop-shadow-[0_0_20px_rgb(0,0,0,0.25)]">
+            <div className="flex gap-4 items-center">
+              <div className="relative">
+                <BsPaperclip className="text-4xl text-header p-1 rounded-full bg-btnWhite"/>
+                <input type="file" className="top-[-3%] absolute w-8 opacity-0"/>
+              </div>
+              <input type="text" className="text-lg w-full mr-2" placeholder="Ask me anything!"/>
+            </div>
+            <Mic output="text-4xl text-header p-2.5 rounded-full bg-btnWhite"/>
           </div>
-          <Mic output="text-4xl text-header p-2.5 rounded-full bg-btnWhite"/>
-          
-        </div>
-        <button className="flex items-center justify-center rounded-full bg-navbar h-14 w-14 px-3">
-          <BsSendArrowDown className="text-3xl text-white text-center"/>
-        </button>
+          <button type="submit" className="relative h-14 w-14 rounded-full bg-navbar">
+            <BsSendArrowDown className="absolute text-3xl text-btnWhite top-3.5 left-2.5"/>
+          </button>
+        </form>
       </footer>
     </main>
   )
