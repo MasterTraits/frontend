@@ -29,7 +29,7 @@ module.exports = {
       }
     },
     colors: {
-      "background": "#151515",
+      "background": "#F6F7FB",
       "navbar" : '#181818',
       "card" : '#1E1E1E',
       "link" : '#FFD700',
@@ -38,6 +38,7 @@ module.exports = {
       "btnWhite" : '#D9D9D9',
       "green" : '#54C541',
       'texttime' : '4C4C4C',
+      "header" : "#33363F",
     },
     
   },

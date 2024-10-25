@@ -28,22 +28,22 @@ export default function Home() {
       {/* The Content Itself */}
       <div className="flex flex-col justify-between items-center w-11/12 p-5 py-7 *:z-20">  
         <div className="w-full flex justify-between items-center">
-          <Link href="/"><BsArrowLeftCircle className="text-3xl"/></Link>
-          <h1 className="text-md mt-3 mr-5">Gabay</h1>
+          <Link href="/"><BsArrowLeftCircle className="text-3xl text-black"/></Link>
+          <h1 className="text-md mt-3 mr-5 text-black">Gabay</h1>
           <div></div>
         </div>
         
         <div>
-          <h2 className="text-center text-2xl font-bold my-5 ">Let's Sign You In!</h2>
+          <h2 className="text-center text-2xl font-bold my-5 text-header">Let's Sign You In!</h2>
           <form>
-            <input className="mb-4 input input-bordered rounded-full bg-transparent w-full max-w-md" 
+            <input className="mb-4 input rounded-full bg-transparent w-full max-w-md" 
               type="email" 
               placeholder="Email" 
               required
             />
             <br/>
             <div className="relative">
-              <input className="mb-7 input input-bordered rounded-full bg-transparent w-full max-w-md" 
+              <input className="mb-7 input rounded-full bg-transparent w-full max-w-md" 
                 type={showpwd.text}  
                 placeholder="Password"
                 required
@@ -54,7 +54,7 @@ export default function Home() {
             </div>
           </form>
           
-          <Link href="/auth/forgotpass" className="underline text-sm">Forgot Password?</Link>
+          <Link href="/auth/forgotpass" className="underline text-sm text-header">Forgot Password?</Link>
           <br/><br/>
           <div className="flex"> 
             <input type="checkbox" className="checkbox border-2 h-5 w-5" id="remember"/>
